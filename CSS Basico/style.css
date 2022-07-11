@@ -1,5 +1,4 @@
-
-h2 {
-    color:blue;
-    text-decoration: underline;
+@font-face {
+    font-family: alexbrush;
+    src: url(/AlexBrush-Regular.ttf);
 }
