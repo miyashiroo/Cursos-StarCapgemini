@@ -13,27 +13,33 @@
         //Ao carregar o documento 
         $(document).ready(function(){
             
-            //Variaveis
-            var campo = $("input").val();
-            var titulo = $("#titulo").html();
-            var subtitulo = $(".subtitulo").html();
 
-            alert(campo);
-            alert(titulo);
-            alert(subtitulo);
+            //ocultar
+            $(".ocultar").click(function(){
 
+                $('.mensagem').slideUp(2000);
+            })
 
+            //Exibir
+
+            $(".exibir").click(function(){
+
+                $(".mensagem").slideDown(2000);
+
+            })
 
         })
 
     </script>
 </head>
 <body>
-    
-    <input type="text" value="Campo Nome">
-    <h1 id="titulo">Titulo em h1</h1>
-    <h2 class="subtitulo">Titulo em h2</h2>
 
 
+    <h1 class="exibir">Exibir</h1>
+    <h1 class="ocultar">Ocultar</h1>
+
+    <hr>
+
+    <h1 class="mensagem">mensagem</h1>
 </body>
 </html>

@@ -13,15 +13,8 @@
         //Ao carregar o documento 
         $(document).ready(function(){
             
-            //Variaveis
-            var campo = $("input").val();
-            var titulo = $("#titulo").html();
-            var subtitulo = $(".subtitulo").html();
-
-            alert(campo);
-            alert(titulo);
-            alert(subtitulo);
-
+            $("img").attr("width","700")
+            $("img").attr("title","alterando title via jQuery")
 
 
         })
@@ -30,10 +23,7 @@
 </head>
 <body>
     
-    <input type="text" value="Campo Nome">
-    <h1 id="titulo">Titulo em h1</h1>
-    <h2 class="subtitulo">Titulo em h2</h2>
-
+    <img src="logo_proway.png" alt="" srcset="" width="50" title="proWay">
 
 </body>
 </html>

@@ -13,15 +13,23 @@
         //Ao carregar o documento 
         $(document).ready(function(){
             
-            //Variaveis
-            var campo = $("input").val();
-            var titulo = $("#titulo").html();
-            var subtitulo = $(".subtitulo").html();
+            //Exibir
 
-            alert(campo);
-            alert(titulo);
-            alert(subtitulo);
+            $("#exibir").click(function(){
 
+                $("img").show();
+
+            })
+
+
+
+            //Ocultar
+
+            $("#ocultar").click(function(){
+
+                $("img").hide();
+
+            })
 
 
         })
@@ -29,10 +37,13 @@
     </script>
 </head>
 <body>
-    
-    <input type="text" value="Campo Nome">
-    <h1 id="titulo">Titulo em h1</h1>
-    <h2 class="subtitulo">Titulo em h2</h2>
+
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+
+    <br>
+
+    <img src="logo_proway.png" alt="" srcset="">
 
 
 </body>
